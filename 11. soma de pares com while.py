@@ -1,12 +1,11 @@
 #Desenvolver um programa que solicita ao usuário um número, e em seguida, calcula a soma de todos os números pares até esse número, utilizando loop while
 
-número = int(input("Digite um número par: "))
-limite = 0
+limite = int(input("Digite um número: "))
+contador = 0
+soma = 0
 
-if(número%2==0):
-    while(limite<=número): 
-        n2 = número + limite
-        print(f"{número} + {limite} = {n2}")
-        limite+=2
-else:
-    print("Esse número não é par.")
+while(contador<=limite): 
+        soma = soma + contador
+        contador+=2
+
+print(f"A soma dos pares até {limite} = {soma}")
